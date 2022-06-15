@@ -10,6 +10,11 @@ app.use(express.json())
 // ===== ROUTES =====
 // Movies
 app.use('/api/v1/movies', require('./routes/api/movies.js'))
+// Users
+app.use('/api/v1/users', require('./routes/api/users'))
+
+
+
 
 // ===== PORT =====
 const port = 8080
